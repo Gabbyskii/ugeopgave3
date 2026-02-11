@@ -25,7 +25,7 @@ public class Main {
 
     int findMax(int[] numbers) {
         int max = numbers[0];
-        for (int num : numbers) { //for(int i = 1; i < numbers.length; i++)
+        for (int num : numbers) {
             if (num > max) {
                 max = num;
             }
@@ -46,7 +46,7 @@ public class Main {
 
     double countAboveAverage(int[] numbers) {
         double overAvg = calculateAverage(numbers);
-        for (int num : numbers) { //for(int i = 1; i < numbers.length; i++)
+        for (int num : numbers) {
             if (num > overAvg) {
                 overAvg = num;
             }
