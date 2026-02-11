@@ -33,7 +33,7 @@ public class Main {
 
     void printTotal(){
         int totalPoints = assignmentPoints + examPoints + projectPoints;
-        System.out.println("Total score: " + totalPoints);
+        System.out.println("Total grades score: " + totalPoints);
     }
 
 }
