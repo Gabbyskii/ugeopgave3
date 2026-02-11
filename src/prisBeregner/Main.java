@@ -1,7 +1,5 @@
 package prisBeregner;
 
-import java.util.Scanner;
-
 public class Main {
     void main(){
 
