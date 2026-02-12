@@ -11,29 +11,30 @@ public class DebugAssignment {
 
         int a = 7, b = 42;
 
-        minimum(a,b);
+        int smaller = minimum(a,b); // variablen int smaller oprettet så metodekaldet i if statementen fungerer
 
-        if {smaller == a} {
+        if (smaller == a) { //if statemten argument skal være i () istedet for krøllen{}
 
-            System.out.println("a is the smallest!");
+       System.out.println(smaller+ " is the smallest!"); //erstattede a med variablen smaller så det printede 7 istedet
 
         }
 
     }
 
-    void minimum(int a, int b) {
+    int minimum(int a, int b) { // ikke være void men int, så den kan return tallets int værdi
+        int smaller; //int smaller variabel lavet
 
         if (a < b) {
 
-            int smaller = a;
+             smaller = a; //int smaller variabel skal deklares udenfor if statements, derfor kun smaller =a
 
-        } else (a >= b) {
+        } else { // else skal ikke have parentes statements, den står alene
 
-            int smaller = b;
+             smaller = b;
 
         }
 
-        return int smaller;
+        return smaller; // returner variablen, istedet for return int smaller, da metoden allerede har returtype int
 
     }
 
