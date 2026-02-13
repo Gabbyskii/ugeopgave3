@@ -14,7 +14,12 @@ public class Main {
         double money = sc.nextDouble();
         deposit(money);
         System.out.println(money + " deposited to " + accountName +"'s account.");
-        withdraw(25);
+
+        System.out.println("How much do you want to withdraw? ");
+        double moneyWithdraw = sc.nextDouble();
+        withdraw(moneyWithdraw);
+        System.out.println("Money withdrawn: "+ moneyWithdraw);
+
         printBalance();
 
 
